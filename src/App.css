@@ -1,38 +1,70 @@
-.App {
-  text-align: center;
+@import "./components/main/card/card.css";
+@import "./Form/form.css";
+
+:root {
+  --primary: #ffffff;
+  --secondary: rgb(173, 162, 162);
+  --secondary-light: ;
+  --white: #ffffff;
+  --black: #252629;
+  --ff-primary: sans-serif;
+  --ff-serif: serif;
+  --fs-200: 0.6rem;
+  --fs-300: 0.8rem;
+  --fs-400: 1rem;
+  --fs-500: 1.1rem;
+  --fs-600: 1.5rem;
+  --fs-900: 1.75rem;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h1,
+h2,
+h3 {
+  line-height: 1.2;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+body,
+h1,
+h2,
+h3,
+p {
+  margin: 0;
 }
 
-.App-link {
-  color: #61dafb;
+body {
+  line-height: 1.5;
+  font-family: var(--ff-primary);
+  color: var(--black);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+button {
+  font-size: var(--fs-400);
+  font-family: var(--ff-primary);
+  color: var(--black);
+  border-radius: 10px;
+}
+
+ul,
+ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+ul li,
+ol li {
+  list-style: none;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
 }
