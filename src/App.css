@@ -1,6 +1,7 @@
 @import "./components/main/card/card.css";
 @import "./Form/form.css";
-
+@import "./components/main/card/card.css";
+@import "./components/main/card-list/card-list.css";
 :root {
   --primary: #ffffff;
   --secondary: rgb(173, 162, 162);

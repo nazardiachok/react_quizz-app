@@ -32,6 +32,7 @@
   background: transparent;
   border: none;
   padding: 0;
+  cursor: pointer;
 }
 
 .navigation__list-item:hover {
