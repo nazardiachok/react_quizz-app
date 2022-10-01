@@ -1,5 +1,4 @@
 import "./form.css";
-import NewCard from "./newCard";
 
 export default function FormInput({ onHandleSubmit }) {
   function onSubmit(event) {
@@ -7,6 +6,7 @@ export default function FormInput({ onHandleSubmit }) {
     const form = event.target;
     const { question } = form.elements;
     const { answer } = form.elements;
+
     onHandleSubmit(question.value, answer.value);
     console.log(form.elements);
     form.reset();

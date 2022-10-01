@@ -5,7 +5,7 @@ export default function Footer() {
   const [activePage, setActivePage] =
     useState(
       "Home"
-    ); /* wir denken uns die state "Home"(anfangsposition in useState) aus und jedes Mal beim click auf das konkretes button bekommt activePage in state ein anderes state. dann wird er verglichen und class angewendet */
+    ); /* wir denken uns die state "Home"(anfangsposition in useState) aus und jedes Mal beim click änderts sich activeState */
 
   return (
     <nav className="navigation">

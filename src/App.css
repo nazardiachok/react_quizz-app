@@ -1,7 +1,8 @@
 @import "./components/main/card/card.css";
-@import "../src/All_Pages/Page_CreateCard/form.css";
+@import "./Form&newCard/form.css";
 @import "./components/main/card/card.css";
 @import "./components/main/card-list/card-list.css";
+@import "./components/main/card/bookmark.css";
 *,
 *::before,
 *::after {
