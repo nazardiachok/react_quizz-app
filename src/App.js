@@ -1,16 +1,17 @@
 import "./App.css";
-import Header from "../src/components/header/header";
-import Footer from "../src/components/footer/footer";
-import CardList from "./components/main/card-list/card-list";
-import Form from "./Form/Form";
+
+import CreateCard from "./All_Pages/Page_CreateCard/CreateCard";
+import HomePage from "./All_Pages/Home_Page/Home-Page";
+import ProfilePage from "./All_Pages/Profile_Page/Profile-Page";
+import BookmarkPage from "./All_Pages/Bookmark_Page/Bookmark-Page";
 
 function App() {
   return (
     <div className="App">
-      <Header />
-      {/* <Form /> */}
-      <CardList />
-      <Footer />
+      {/* <HomePage /> */}
+      {/* <BookmarkPage /> */}
+      <CreateCard />
+      {/* <ProfilePage /> */}
     </div>
   );
 }

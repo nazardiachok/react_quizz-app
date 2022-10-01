@@ -1,23 +1,7 @@
 @import "./components/main/card/card.css";
-@import "./Form/form.css";
+@import "../src/All_Pages/Page_CreateCard/form.css";
 @import "./components/main/card/card.css";
 @import "./components/main/card-list/card-list.css";
-:root {
-  --primary: #ffffff;
-  --secondary: rgb(173, 162, 162);
-  --secondary-light: ;
-  --white: #ffffff;
-  --black: #252629;
-  --ff-primary: sans-serif;
-  --ff-serif: serif;
-  --fs-200: 0.6rem;
-  --fs-300: 0.8rem;
-  --fs-400: 1rem;
-  --fs-500: 1.1rem;
-  --fs-600: 1.5rem;
-  --fs-900: 1.75rem;
-}
-
 *,
 *::before,
 *::after {
@@ -42,6 +26,22 @@ body {
   line-height: 1.5;
   font-family: var(--ff-primary);
   color: var(--black);
+}
+
+:root {
+  --primary: #ffffff;
+  --secondary: rgb(173, 162, 162);
+  --secondary-light: ;
+  --white: #ffffff;
+  --black: #252629;
+  --ff-primary: sans-serif;
+  --ff-serif: serif;
+  --fs-200: 0.6rem;
+  --fs-300: 0.8rem;
+  --fs-400: 1rem;
+  --fs-500: 1.1rem;
+  --fs-600: 1.5rem;
+  --fs-900: 1.75rem;
 }
 
 button {
