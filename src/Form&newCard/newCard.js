@@ -30,6 +30,9 @@ export default function NewCard({ question, answer, id, deleteCard }) {
             return <Tegform teg={teg.teg} />;
           })}
         </ul>
+        <button onClick={() => deleteCard(id)} className="delete">
+          Delete
+        </button>
 
         <div class="card__button-bookmark">
           <button
@@ -48,9 +51,6 @@ export default function NewCard({ question, answer, id, deleteCard }) {
             </svg>
           </button>
         </div>
-        <button onClick={() => deleteCard(id)} className="delete">
-          Delete
-        </button>
       </article>
     </li>
   );

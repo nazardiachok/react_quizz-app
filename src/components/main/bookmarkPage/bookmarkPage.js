@@ -3,7 +3,9 @@ import Card from "../card/card";
 export default function BookmarkPage() {
   return (
     <>
-      <Card />
+      <ul className="card-list">
+        <Card />
+      </ul>
     </>
   );
 }

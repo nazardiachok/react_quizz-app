@@ -8,18 +8,21 @@ import Header from "./components/header/header";
 import Footer from "./components/footer/footer";
 
 function App() {
-  /* const [page, setPage] =
+  const [activePage, setActivePage] =
     useState(
       "Home"
-    ); */ /* wir denken uns die state "Home"(anfangsposition in useState) aus und jedes Mal beim click änderts sich activeState */
+    ); /* wir denken uns die state "Home"(anfangsposition in useState) aus und jedes Mal beim click änderts sich activeState */
   return (
     <div className="App">
       <Header />
-      {/* <CardList /> */}
-      {/* <BookmarkPage /> */}
-      <CreateCard />
-      {/* <ProfilePage /> */}
-      <Footer />
+      <main>
+        {activePage === "Home" && <CardList />}
+        {activePage === "Bookmark" && <BookmarkPage />}
+        {activePage === "CreateCard" && <CreateCard />}
+        {activePage === "Profile" && <ProfilePage />}
+      </main>
+
+      <Footer activePage={activePage} setActivePage={setActivePage} />
     </div>
   );
 }

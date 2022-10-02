@@ -1,12 +1,6 @@
 import "./footer.css";
-import { useState } from "react";
 
-export default function Footer() {
-  const [activePage, setActivePage] =
-    useState(
-      "Home"
-    ); /* wir denken uns die state "Home"(anfangsposition in useState) aus und jedes Mal beim click änderts sich activeState */
-
+export default function Footer({ activePage, setActivePage }) {
   return (
     <nav className="navigation">
       <ul className="navigation__list">
@@ -38,17 +32,16 @@ export default function Footer() {
 
         <li
           className={`navigation__list-item ${
-            activePage === "Form" ? "navigation__list-item--active" : ""
+            activePage === "CreateCard" ? "navigation__list-item--active" : ""
           }`}
         >
           <button
-            onClick={() => setActivePage("Form")}
+            onClick={() => setActivePage("CreateCard")}
             className="navigation__link"
           >
             <img src="https://img.icons8.com/external-simple-solid-edt.graphics/32/000000/external-Plus-add-and-remove-simple-solid-edt.graphics.png" />
           </button>
         </li>
-
         <li
           className={`navigation__list-item ${
             activePage === "Profile" ? "navigation__list-item--active" : ""

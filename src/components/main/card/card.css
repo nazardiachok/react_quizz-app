@@ -66,9 +66,8 @@
   margin: 0 0 4rem;
 }
 .delete {
-  position: relative;
-  bottom: 26px;
-  left: 280px;
+  display: flex;
+  margin: 5px auto;
   cursor: pointer;
 }
 .delete:hover {

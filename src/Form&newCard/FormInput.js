@@ -43,8 +43,6 @@ export default function FormInput({ onHandleSubmit }) {
         <span class="form__character-count">
           <span data-js="amount-left-answer"></span> characters left
         </span>
-        <label for="teg">Tag:</label>
-        <input id="teg" type="text" name="teg" />
         <button class="form__submit-button" type="submit">
           Submit
         </button>
