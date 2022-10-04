@@ -1,9 +1,11 @@
-import "./header.css";
+import "./Header.css";
 
-export default function Header() {
+function Header() {
   return (
     <header className="header">
-      <h1 className="header__title">Quiz-App</h1>
+      <h1>Quizz App React</h1>
     </header>
   );
 }
+
+export default Header;

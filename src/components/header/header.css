@@ -4,11 +4,12 @@
   top: 0;
   left: 0;
   width: 100%;
-  padding: 2rem 0;
-  border-bottom: 1px solid black;
-  background-color: aliceblue;
+  min-height: 50px;
+  background: var(--primary);
+  border-bottom: 1px solid var(--black);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
 }
-
-.header__title {
-  text-align: center;
+h1 {
+  padding-top: 5px;
 }

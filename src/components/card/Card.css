@@ -1,0 +1,127 @@
+.card {
+  border: 1px solid var(--black);
+  margin: 2em 0;
+  text-align: center;
+  position: relative;
+  width: 20em;
+  padding: 1em;
+  border-radius: 10px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+.card__button-answer {
+  background: var(--secondary);
+  color: var(--white);
+  border: none;
+  font-size: 0.9em;
+  padding: 0.7em;
+  border-radius: 15px;
+  margin: 20px 0;
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
+    rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
+    rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px,
+    rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px,
+    rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+.card__button-answer:hover {
+  opacity: 0.75;
+  cursor: pointer;
+}
+h2 {
+  font-size: 22px;
+}
+
+.card__answer {
+  font-style: italic;
+  display: none;
+}
+
+.card__answer--active {
+  display: block;
+}
+
+.card__button-bookmark {
+  position: absolute;
+  right: 1em;
+  top: -0.5em;
+}
+
+.card__tag-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5em;
+  list-style: none;
+  padding: 0;
+  margin-bottom: 0.5em;
+}
+
+.card__tag-list-item {
+  background-color: var(--secondary);
+  color: var(--white);
+  border-radius: 10px;
+  padding: 0.1em 0.3em;
+  font-size: 13px;
+}
+
+.card__bookmark {
+  border: none;
+  font-size: 0.7em;
+  width: 2.7em;
+  height: 2em;
+  border-radius: 10%;
+  background-color: darkgrey;
+  color: var(--white);
+}
+
+.card__bookmark:hover {
+  cursor: pointer;
+}
+
+.card__bookmark--active {
+  color: var(--black);
+}
+
+.card__bookmark-icon {
+  fill: currentcolor;
+  width: 1.7em;
+}
+
+/* .card__button-trashcan {
+  position: absolute;
+  left: 1em;
+  top: -1.5em;
+} */
+
+.card__trashcan {
+  font-size: 1em;
+  width: 1.5em;
+  height: 1.5em;
+  border-radius: 50%;
+  background: var(--secondary);
+  color: var(--white);
+}
+
+.card__trashcan:hover {
+  cursor: pointer;
+}
+
+.card__trashcan-icon {
+  fill: currentcolor;
+  width: 1.3em;
+}
+.delete {
+  align-self: end;
+  display: flex;
+  margin: 5px auto;
+  cursor: pointer;
+  position: absolute;
+  right: 1em;
+  bottom: 1em;
+}
+.delete:hover {
+  background-color: rgb(164, 0, 0);
+  color: aliceblue;
+}
