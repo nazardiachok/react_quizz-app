@@ -14,7 +14,7 @@ const myCards = [
     question: "Wann wurde die Republik Deutschland gegründet?",
     answer: "1949",
     tags: ["when?", "how?", "why?"],
-    bookmarked: true,
+    bookmarked: false,
   },
   {
     id: nanoid(),
@@ -28,7 +28,7 @@ const myCards = [
     question: "Warum nutzen wir props?",
     answer: "Props sind gut für...",
     tags: ["when?", "how?", "why?"],
-    bookmarked: true,
+    bookmarked: false,
   },
 ];
 
@@ -50,6 +50,8 @@ function App() {
 
   function deleteCard(cardId) {
     setCards(cards.filter(({ id }) => cardId !== id));
+    //lass alles ausser diese eine mit gleichem id.
+    /* cardID ist ausgedachte name für card.id die aber gleiche */
   }
 
   function toggleBookmark(cardId) {
@@ -60,6 +62,8 @@ function App() {
       }))
     );
   }
+
+  function NavigateCard() {}
 
   return (
     <div className="app">
@@ -73,9 +77,12 @@ function App() {
                 cards={cards}
                 onDelete={deleteCard}
                 onBookmark={toggleBookmark}
+                NavigateCard={NavigateCard}
               />
             }
-          ></Route>
+          >
+            <Route path=""></Route>
+          </Route>
           <Route
             path="/bookmarked"
             element={
@@ -91,7 +98,6 @@ function App() {
             element={<Create onCreate={appendCard} />}
           ></Route>
           <Route path="/profile" element={<Profile />}></Route>
-          {/* <Route path="*" element={<h1> Seite existiert nicht,du</h1>}></Route> */}
         </Routes>
       </main>
       <Navigation />

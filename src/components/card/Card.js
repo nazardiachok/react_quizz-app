@@ -7,6 +7,7 @@ function Card({ question, answer, tags, bookmarked, onDelete, onBookmark }) {
   return (
     <section className="card">
       <h2>{question}</h2>
+
       <button
         onClick={() => setShowAnswer(!showAnswer)}
         className="card__button-answer"
@@ -17,6 +18,7 @@ function Card({ question, answer, tags, bookmarked, onDelete, onBookmark }) {
       {showAnswer && (
         <p className="card__answer card__answer--active">{answer}</p>
       )}
+
       <ul className="card__tag-list">
         {tags.map((tag, index) => (
           <li key={index} className="card__tag-list-item">
